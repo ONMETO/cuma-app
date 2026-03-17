@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Music, ImageIcon, PlaySquare, Activity, Compass } from 'lucide-react';
 import { cn } from '../utils/cn';
+import appleLogo from '../../assets/apple_logo.svg';
 
 const FeatureCard = ({
   className,
@@ -32,7 +33,7 @@ const FeatureCard = ({
       </div>
     )}
     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20 z-10" />
-    
+
     <div className="relative z-20 flex justify-between items-start w-full">
       <div className="w-12 h-12 bg-white/10 backdrop-blur-md rounded-2xl flex items-center justify-center border border-white/20 text-white shadow-lg">
         <Icon className="w-6 h-6" />
@@ -57,18 +58,21 @@ export const BentoFeatures = () => {
   return (
     <div id="features" className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 relative z-10">
       <div className="mb-16">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tighter mb-6 uppercase">
-          Crafted for<br />
-          <span className="text-neutral-500">the obsessed.</span>
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tighter mb-6 uppercase leading-[0.9]">
+          AI-Powered <br />
+          <span className="text-neutral-500">Music Experience.</span>
         </h2>
+        <p className="text-[30px] sm:text-[45px] md:text-[48px] lg:text-[70px] text-white font-black tracking-tighter leading-tight mb-8 text-center">
+          Redefining listen, discover, and feel.
+        </p>
         <p className="text-xl text-neutral-300 font-medium max-w-xl">
-          Experience a suite of features designed to transform how you interact with music. No distractions, just pure rhythm.
+          By connecting your <span className="inline-flex items-center gap-1.5"><img src={appleLogo} alt="Apple" className="w-[1.1em] h-[1.1em] mb-0.5" /><span className="text-[#fa243c]">Apple Music</span></span> library, we use advanced AI models to help you expand your experience.
         </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-3 gap-6 h-auto md:h-[900px]">
         {/* Item 1: AI Covers */}
-        <FeatureCard 
+        <FeatureCard
           className="md:col-span-2 md:row-span-2"
           large
           title="AI Generation."
@@ -76,9 +80,9 @@ export const BentoFeatures = () => {
           icon={Music}
           imageSrc="https://images.unsplash.com/photo-1744658841066-0691ab198343?q=80&w=1080&auto=format&fit=crop"
         />
-        
+
         {/* Item 2: Wallpaper */}
-        <FeatureCard 
+        <FeatureCard
           className="md:col-span-1 md:row-span-1"
           title="Wallpaper Conversion."
           description="Turn any album artwork into a stunning, high-resolution device wallpaper with a single tap."
@@ -87,7 +91,7 @@ export const BentoFeatures = () => {
         />
 
         {/* Item 3: GIF Sharing */}
-        <FeatureCard 
+        <FeatureCard
           className="md:col-span-1 md:row-span-1"
           title="GIF Sharing."
           description="Share your favorite lyrical moments effortlessly as beautiful, dynamic animated GIFs."
@@ -95,7 +99,7 @@ export const BentoFeatures = () => {
         />
 
         {/* Item 4: Nearby */}
-        <FeatureCard 
+        <FeatureCard
           className="md:col-span-2 md:row-span-1"
           title="Nearby Discovery."
           description="Discover what people around you are listening to in real-time. Connect through shared musical tastes in your vicinity."
@@ -103,7 +107,7 @@ export const BentoFeatures = () => {
         />
 
         {/* Item 5: Sports Breathing */}
-        <FeatureCard 
+        <FeatureCard
           className="md:col-span-1 md:row-span-1"
           title="Pace Rhythm."
           description="Synchronize your breathing and workout pace directly to the underlying beat of your tracks."

@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "motion/react";
-import { Apple, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+import appleLogo from "../../assets/apple_logo.svg";
 
 const inter = "'Inter', sans-serif";
 const serif = "'DM Serif Display', serif";
@@ -70,7 +71,7 @@ export function DownloadCTA() {
                 className="group flex items-center gap-2.5 px-8 py-4 rounded-full bg-white text-[#08080c] hover:shadow-lg hover:shadow-white/10 transition-all"
                 style={{ fontFamily: inter, fontSize: 15, fontWeight: 500 }}
               >
-                <Apple size={18} />
+                <img src={appleLogo} alt="Apple" className="w-[18px] h-[18px]" />
                 Download on the App Store
                 <ArrowUpRight size={15} className="opacity-50 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
               </a>
