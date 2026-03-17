@@ -1,0 +1,11 @@
+
+  # luodiye 2-opus
+
+  This is a code bundle for luodiye 2-opus. The original project is available at https://www.figma.com/design/B0LunYwPYgDGy1FhFH0m7t/luodiye-2-opus.
+
+  ## Running the code
+
+  Run `npm i` to install the dependencies.
+
+  Run `npm run dev` to start the development server.
+  
