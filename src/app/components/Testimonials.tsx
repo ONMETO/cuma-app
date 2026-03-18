@@ -1,6 +1,7 @@
 import React from "react";
 import { Marquee } from "./Marquee";
 import { cn } from "../utils/cn";
+import ScrollReveal from "./ui/ScrollReveal";
 
 const reviews = [
   {
@@ -80,12 +81,16 @@ export function Testimonials() {
   return (
     <section className="relative flex w-full flex-col items-center justify-center overflow-hidden py-32 z-10 border-t border-neutral-900 bg-black">
       <div className="mb-16 text-center px-4">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tighter mb-4 uppercase">
-          Loved by <span className="text-neutral-600">listeners.</span>
-        </h2>
-        <p className="text-lg text-neutral-400 font-medium max-w-xl mx-auto">
-          See what our early adopters have to say about Melo. Join the beta today.
-        </p>
+        <ScrollReveal direction="up" delay={0.1}>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tighter mb-4 uppercase">
+            Loved by <span className="text-neutral-600">listeners.</span>
+          </h2>
+        </ScrollReveal>
+        <ScrollReveal direction="up" delay={0.3}>
+          <p className="text-lg text-neutral-400 font-medium max-w-xl mx-auto">
+            See what our early adopters have to say about Melo. Join the beta today.
+          </p>
+        </ScrollReveal>
       </div>
 
       <div className="relative flex w-full max-w-screen-2xl mx-auto flex-col items-center justify-center overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_15%,black_85%,transparent)]">
