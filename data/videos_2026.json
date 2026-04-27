@@ -1,0 +1,175 @@
+{
+  "version": 1,
+  "year": 2026,
+  "issues": [
+    {
+      "issue": 1,
+      "week_label": "2026-W17",
+      "date_from": "2026-04-17",
+      "date_to": "2026-04-23",
+      "published_at": "2026-04-23",
+      "videos": [
+        {
+          "id": "78wrful9cVU",
+          "url": "https://www.youtube.com/watch?v=78wrful9cVU",
+          "source": "youtube",
+          "title": "Olivia Rodrigo - drop dead (Official Music Video)",
+          "artist": "Olivia Rodrigo",
+          "sort": 1
+        },
+        {
+          "id": "nUsrYVxrDwI",
+          "url": "https://www.youtube.com/watch?v=nUsrYVxrDwI",
+          "source": "youtube",
+          "title": "Ella Langley - Choosin' Texas (Official Video)",
+          "artist": "Ella Langley",
+          "sort": 2
+        },
+        {
+          "id": "yebNIHKAC4A",
+          "url": "https://www.youtube.com/watch?v=yebNIHKAC4A",
+          "source": "youtube",
+          "title": "\u201cGolden\u201d Official Lyric Video | KPop Demon Hunters | Sony Animation",
+          "artist": "Sony Pictures Animation",
+          "sort": 3
+        },
+        {
+          "id": "MPuK06zUIhc",
+          "url": "https://www.youtube.com/watch?v=MPuK06zUIhc",
+          "source": "youtube",
+          "title": "Pooh Shiesty - FDO [Official Music Video]",
+          "artist": "Pooh Shiesty",
+          "sort": 4
+        },
+        {
+          "id": "Ys7-6_t7OEQ",
+          "url": "https://www.youtube.com/watch?v=Ys7-6_t7OEQ",
+          "source": "youtube",
+          "title": "Justin Bieber - Beauty And A Beat (Official Music Video) ft. Nicki Minaj",
+          "artist": "Justin Bieber",
+          "sort": 5
+        },
+        {
+          "id": "kffacxfA7G4",
+          "url": "https://www.youtube.com/watch?v=kffacxfA7G4",
+          "source": "youtube",
+          "title": "Justin Bieber - Baby ft. Ludacris",
+          "artist": "Justin Bieber",
+          "sort": 6
+        },
+        {
+          "id": "ddkbVYutRXA",
+          "url": "https://www.youtube.com/watch?v=ddkbVYutRXA",
+          "source": "youtube",
+          "title": "FUERZA REGIDA - MARLBORO ROJO (VIDEO OFICIAL)",
+          "artist": "Fuerza Regida",
+          "sort": 7
+        },
+        {
+          "id": "hLOheGDwD_0",
+          "url": "https://www.youtube.com/watch?v=hLOheGDwD_0",
+          "source": "youtube",
+          "title": "Ella Langley - Choosin' Texas (Official Lyric Video)",
+          "artist": "Ella Langley",
+          "sort": 8
+        },
+        {
+          "id": "7yaU0qXlgbo",
+          "url": "https://www.youtube.com/watch?v=7yaU0qXlgbo",
+          "source": "youtube",
+          "title": "Ice Spice - Big Guy (from \u201cThe SpongeBob Movie: Search for SquarePants\u201d / Lyric Video)",
+          "artist": "Ice Spice",
+          "sort": 9
+        },
+        {
+          "id": "7F1ET2XHQfk",
+          "url": "https://www.youtube.com/watch?v=7F1ET2XHQfk",
+          "source": "youtube",
+          "title": "KATSEYE (\ucba3\uce20\uc544\uc774) \"PINKY UP\" Official MV",
+          "artist": "KATSEYE",
+          "sort": 10
+        },
+        {
+          "id": "8g7VclWsiaM",
+          "url": "https://www.youtube.com/watch?v=8g7VclWsiaM",
+          "source": "youtube",
+          "title": "\"PINKY UP\" MV (Choreography Ver.) | KATSEYE",
+          "artist": "KATSEYE",
+          "sort": 11
+        },
+        {
+          "id": "c1fvlejpIAA",
+          "url": "https://www.youtube.com/watch?v=c1fvlejpIAA",
+          "source": "youtube",
+          "title": "Los Gemelos De Sinaloa, Clave Especial, Fuerza Regida - FERRARI (Official)",
+          "artist": "Los Gemelos De Sinaloa, Clave Especial, Fuerza Regida",
+          "sort": 12
+        },
+        {
+          "id": "yNa8jP4zoJo",
+          "url": "https://www.youtube.com/watch?v=yNa8jP4zoJo",
+          "source": "youtube",
+          "title": "Laufey - Madwoman (Official Music Video)",
+          "artist": "Laufey",
+          "sort": 13
+        },
+        {
+          "id": "mcg4z1gGbEw",
+          "url": "https://www.youtube.com/watch?v=mcg4z1gGbEw",
+          "source": "youtube",
+          "title": "T.I. - LET 'EM KNOW (Official Video)",
+          "artist": "T.I.",
+          "sort": 14
+        },
+        {
+          "id": "983bBbJx0Mk",
+          "url": "https://www.youtube.com/watch?v=983bBbJx0Mk",
+          "source": "youtube",
+          "title": "\"Soda Pop\" Official Lyric Video | KPop Demon Hunters | Sony Animation",
+          "artist": "Sony Pictures Animation",
+          "sort": 15
+        },
+        {
+          "id": "kwwdY1bp-Ck",
+          "url": "https://www.youtube.com/watch?v=kwwdY1bp-Ck",
+          "source": "youtube",
+          "title": "Todo Lo Fue - (Video Oficial) - Lenin Ramirez - DEL Records 2026",
+          "artist": "Lenin Ramirez",
+          "sort": 16
+        },
+        {
+          "id": "Dg47eNL_Usw",
+          "url": "https://www.youtube.com/watch?v=Dg47eNL_Usw",
+          "source": "youtube",
+          "title": "Ella Langley - Be Her (Official Video)",
+          "artist": "Ella Langley",
+          "sort": 17
+        },
+        {
+          "id": "7SsmyjVF1Oo",
+          "url": "https://www.youtube.com/watch?v=7SsmyjVF1Oo",
+          "source": "youtube",
+          "title": "Herencia De Grandes - Ya Borracho [Official Video]",
+          "artist": "Herencia De Grandes",
+          "sort": 18
+        },
+        {
+          "id": "rtwpk9rb1Dc",
+          "url": "https://www.youtube.com/watch?v=rtwpk9rb1Dc",
+          "source": "youtube",
+          "title": "Tyla - SHE DID IT AGAIN (Official Music Video) ft. Zara Larsson",
+          "artist": "Tyla",
+          "sort": 19
+        },
+        {
+          "id": "ko70cExuzZM",
+          "url": "https://www.youtube.com/watch?v=ko70cExuzZM",
+          "source": "youtube",
+          "title": "Taylor Swift - The Fate of Ophelia (Official Music Video)",
+          "artist": "Taylor Swift",
+          "sort": 20
+        }
+      ]
+    }
+  ]
+}

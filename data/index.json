@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "latest": {
+    "year": 2026,
+    "issue": 1,
+    "file": "data/videos_2026.json"
+  },
+  "years": [
+    {
+      "year": 2026,
+      "file": "data/videos_2026.json"
+    }
+  ]
+}
