@@ -1,5 +1,5 @@
 
-  # luodiye 2-opus
+  # pages for list data
 
   This is a code bundle for luodiye 2-opus. The original project is available at https://ONMETO.github.io/cuma-app/
 
