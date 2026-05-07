@@ -29,7 +29,7 @@
           "id": "yebNIHKAC4A",
           "url": "https://www.youtube.com/watch?v=yebNIHKAC4A",
           "source": "youtube",
-          "title": "\u201cGolden\u201d Official Lyric Video | KPop Demon Hunters | Sony Animation",
+          "title": "“Golden” Official Lyric Video | KPop Demon Hunters | Sony Animation",
           "artist": "Sony Pictures Animation",
           "sort": 3
         },
@@ -77,7 +77,7 @@
           "id": "7yaU0qXlgbo",
           "url": "https://www.youtube.com/watch?v=7yaU0qXlgbo",
           "source": "youtube",
-          "title": "Ice Spice - Big Guy (from \u201cThe SpongeBob Movie: Search for SquarePants\u201d / Lyric Video)",
+          "title": "Ice Spice - Big Guy (from “The SpongeBob Movie: Search for SquarePants” / Lyric Video)",
           "artist": "Ice Spice",
           "sort": 9
         },
@@ -85,7 +85,7 @@
           "id": "7F1ET2XHQfk",
           "url": "https://www.youtube.com/watch?v=7F1ET2XHQfk",
           "source": "youtube",
-          "title": "KATSEYE (\ucba3\uce20\uc544\uc774) \"PINKY UP\" Official MV",
+          "title": "KATSEYE (쮣츠아이) \"PINKY UP\" Official MV",
           "artist": "KATSEYE",
           "sort": 10
         },
@@ -168,6 +168,415 @@
           "title": "Taylor Swift - The Fate of Ophelia (Official Music Video)",
           "artist": "Taylor Swift",
           "sort": 20
+        }
+      ]
+    },
+    {
+      "issue": 2,
+      "week_label": "2026-W18",
+      "date_from": "2026-04-24",
+      "date_to": "2026-04-30",
+      "published_at": "2026-05-01",
+      "videos": [
+        {
+          "id": "nUsrYVxrDwI",
+          "url": "https://www.youtube.com/watch?v=nUsrYVxrDwI",
+          "source": "youtube",
+          "title": "Ella Langley - Choosin' Texas (Official Video)",
+          "artist": "Ella Langley",
+          "sort": 1
+        },
+        {
+          "id": "Zi_XLOBDo_Y",
+          "url": "https://www.youtube.com/watch?v=Zi_XLOBDo_Y",
+          "source": "youtube",
+          "title": "Michael Jackson - Billie Jean (Official Video)",
+          "artist": "Michael Jackson",
+          "sort": 2
+        },
+        {
+          "id": "oRdxUFDoQe0",
+          "url": "https://www.youtube.com/watch?v=oRdxUFDoQe0",
+          "source": "youtube",
+          "title": "Michael Jackson - Beat It (Official 4K Video)",
+          "artist": "Michael Jackson",
+          "sort": 3
+        },
+        {
+          "id": "ddkbVYutRXA",
+          "url": "https://www.youtube.com/watch?v=ddkbVYutRXA",
+          "source": "youtube",
+          "title": "FUERZA REGIDA - MARLBORO ROJO (VIDEO OFICIAL)",
+          "artist": "Fuerza Regida",
+          "sort": 4
+        },
+        {
+          "id": "MPuK06zUIhc",
+          "url": "https://www.youtube.com/watch?v=MPuK06zUIhc",
+          "source": "youtube",
+          "title": "Pooh Shiesty - FDO [Official Music Video]",
+          "artist": "Pooh Shiesty",
+          "sort": 5
+        },
+        {
+          "id": "8ULmhXO4gks",
+          "url": "https://www.youtube.com/watch?v=8ULmhXO4gks",
+          "source": "youtube",
+          "title": "mgk - FIX UR FACE (Official Music Video)",
+          "artist": "mgk",
+          "sort": 6
+        },
+        {
+          "id": "hLOheGDwD_0",
+          "url": "https://www.youtube.com/watch?v=hLOheGDwD_0",
+          "source": "youtube",
+          "title": "Ella Langley - Choosin' Texas (Official Lyric Video)",
+          "artist": "Ella Langley",
+          "sort": 7
+        },
+        {
+          "id": "sOnqjkJTMaA",
+          "url": "https://www.youtube.com/watch?v=sOnqjkJTMaA",
+          "source": "youtube",
+          "title": "Michael Jackson - Thriller (Official Video - Shortened Version)",
+          "artist": "Michael Jackson",
+          "sort": 8
+        },
+        {
+          "id": "kffacxfA7G4",
+          "url": "https://www.youtube.com/watch?v=kffacxfA7G4",
+          "source": "youtube",
+          "title": "Justin Bieber - Baby ft. Ludacris",
+          "artist": "Justin Bieber",
+          "sort": 9
+        },
+        {
+          "id": "7yaU0qXlgbo",
+          "url": "https://www.youtube.com/watch?v=7yaU0qXlgbo",
+          "source": "youtube",
+          "title": "Ice Spice - Big Guy (from \"The SpongeBob Movie: Search for SquarePants\" / Lyric Video)",
+          "artist": "Ice Spice",
+          "sort": 10
+        },
+        {
+          "id": "kwwdY1bp-Ck",
+          "url": "https://www.youtube.com/watch?v=kwwdY1bp-Ck",
+          "source": "youtube",
+          "title": "Todo Lo Fue - (Video Oficial) - Lenin Ramirez - DEL Records 2026",
+          "artist": "Lenin Ramírez",
+          "sort": 11
+        },
+        {
+          "id": "h_D3VFfhvs4",
+          "url": "https://www.youtube.com/watch?v=h_D3VFfhvs4",
+          "source": "youtube",
+          "title": "Michael Jackson - Smooth Criminal (Official Video)",
+          "artist": "Michael Jackson",
+          "sort": 12
+        },
+        {
+          "id": "kF4MVeWFiDs",
+          "url": "https://www.youtube.com/watch?v=kF4MVeWFiDs",
+          "source": "youtube",
+          "title": "Latto, GloRilla - GOMF (Official Music Video)",
+          "artist": "Latto & GloRilla",
+          "sort": 13
+        },
+        {
+          "id": "yURRmWtbTbo",
+          "url": "https://www.youtube.com/watch?v=yURRmWtbTbo",
+          "source": "youtube",
+          "title": "Michael Jackson - Don't Stop 'Til You Get Enough (Official Video)",
+          "artist": "Michael Jackson",
+          "sort": 14
+        },
+        {
+          "id": "7SsmyjVF1Oo",
+          "url": "https://www.youtube.com/watch?v=7SsmyjVF1Oo",
+          "source": "youtube",
+          "title": "Herencia De Grandes - Ya Borracho [Official Video]",
+          "artist": "Herencia De Grandes",
+          "sort": 15
+        },
+        {
+          "id": "7F1ET2XHQfk",
+          "url": "https://www.youtube.com/watch?v=7F1ET2XHQfk",
+          "source": "youtube",
+          "title": "KATSEYE (캣츠아이) \"PINKY UP\" Official MV",
+          "artist": "KATSEYE",
+          "sort": 16
+        },
+        {
+          "id": "Dg47eNL_Usw",
+          "url": "https://www.youtube.com/watch?v=Dg47eNL_Usw",
+          "source": "youtube",
+          "title": "Ella Langley - Be Her (Official Video)",
+          "artist": "Ella Langley",
+          "sort": 17
+        },
+        {
+          "id": "5X-Mrc2l1d0",
+          "url": "https://www.youtube.com/watch?v=5X-Mrc2l1d0",
+          "source": "youtube",
+          "title": "Michael Jackson - Rock With You (Official Video)",
+          "artist": "Michael Jackson",
+          "sort": 18
+        },
+        {
+          "id": "Ys7-6_t7OEQ",
+          "url": "https://www.youtube.com/watch?v=Ys7-6_t7OEQ",
+          "source": "youtube",
+          "title": "Justin Bieber - Beauty And A Beat (Official Music Video) ft. Nicki Minaj",
+          "artist": "Justin Bieber",
+          "sort": 19
+        },
+        {
+          "id": "mcg4z1gGbEw",
+          "url": "https://www.youtube.com/watch?v=mcg4z1gGbEw",
+          "source": "youtube",
+          "title": "T.I. - LET 'EM KNOW (Official Video)",
+          "artist": "T.I.",
+          "sort": 20
+        },
+        {
+          "id": "8g7VclWsiaM",
+          "url": "https://www.youtube.com/watch?v=8g7VclWsiaM",
+          "source": "youtube",
+          "title": "\"PINKY UP\" MV (Choreography Ver.) | KATSEYE",
+          "artist": "KATSEYE",
+          "sort": 21
+        },
+        {
+          "id": "W3EDlWKUnw4",
+          "url": "https://www.youtube.com/watch?v=W3EDlWKUnw4",
+          "source": "youtube",
+          "title": "Hardnard - Butta B (Official Music Video)",
+          "artist": "Hardnard",
+          "sort": 22
+        },
+        {
+          "id": "LeiFF0gvqcc",
+          "url": "https://www.youtube.com/watch?v=LeiFF0gvqcc",
+          "source": "youtube",
+          "title": "Michael Jackson - Remember the Time (Official Video)",
+          "artist": "Michael Jackson",
+          "sort": 23
+        },
+        {
+          "id": "bIiIrXM7BUA",
+          "url": "https://www.youtube.com/watch?v=bIiIrXM7BUA",
+          "source": "youtube",
+          "title": "BBpanzu - Bang Bang Bang (Official Music Video)",
+          "artist": "BBpanzu",
+          "sort": 24
+        },
+        {
+          "id": "ko70cExuzZM",
+          "url": "https://www.youtube.com/watch?v=ko70cExuzZM",
+          "source": "youtube",
+          "title": "Taylor Swift - The Fate of Ophelia (Official Music Video)",
+          "artist": "Taylor Swift",
+          "sort": 25
+        },
+        {
+          "id": "A3G_7XgK2B4",
+          "url": "https://www.youtube.com/watch?v=A3G_7XgK2B4",
+          "source": "youtube",
+          "title": "I Can’t Love You Anymore",
+          "artist": "Ella Langley & Morgan Wallen",
+          "sort": 26
+        },
+        {
+          "id": "hwUixddbmrQ",
+          "url": "https://www.youtube.com/watch?v=hwUixddbmrQ",
+          "source": "youtube",
+          "title": "Morgan Wallen - I Got Better (Official Music Video)",
+          "artist": "Morgan Wallen",
+          "sort": 27
+        },
+        {
+          "id": "ICpxWJ_f4Ds",
+          "url": "https://www.youtube.com/watch?v=ICpxWJ_f4Ds",
+          "source": "youtube",
+          "title": "YFN Lucci - ON MY MIND. (Official Music Video)",
+          "artist": "YFN Lucci",
+          "sort": 28
+        },
+        {
+          "id": "kG0z7hwY3as",
+          "url": "https://www.youtube.com/watch?v=kG0z7hwY3as",
+          "source": "youtube",
+          "title": "\"Debut\" Performance Video | KATSEYE",
+          "artist": "KATSEYE",
+          "sort": 29
+        },
+        {
+          "id": "c1fvlejpIAA",
+          "url": "https://www.youtube.com/watch?v=c1fvlejpIAA",
+          "source": "youtube",
+          "title": "Los Gemelos De Sinaloa, Clave Especial, Fuerza Regida - FERRARI (Official Video)",
+          "artist": "LOS GEMELOS DE SINALOA & CLAVE ESPECIAL & Fuerza Regida",
+          "sort": 30
+        },
+        {
+          "id": "lY5V4hSLWY8",
+          "url": "https://www.youtube.com/watch?v=lY5V4hSLWY8",
+          "source": "youtube",
+          "title": "Bruno Mars - Risk It All (Official Music Video)",
+          "artist": "Bruno Mars",
+          "sort": 31
+        },
+        {
+          "id": "fEl_ug9VfvQ",
+          "url": "https://www.youtube.com/watch?v=fEl_ug9VfvQ",
+          "source": "youtube",
+          "title": "BossMan Dlow - Motion Party (Official Music Video)",
+          "artist": "BossMan Dlow",
+          "sort": 32
+        },
+        {
+          "id": "mrV8kK5t0V8",
+          "url": "https://www.youtube.com/watch?v=mrV8kK5t0V8",
+          "source": "youtube",
+          "title": "Bruno Mars - I Just Might (Official Music Video)",
+          "artist": "Bruno Mars",
+          "sort": 33
+        },
+        {
+          "id": "ebXEaHEYYng",
+          "url": "https://www.youtube.com/watch?v=ebXEaHEYYng",
+          "source": "youtube",
+          "title": "Los Dareyes De La Sierra - Frecuencia (Official Music Video)",
+          "artist": "Los Dareyes De La Sierra",
+          "sort": 34
+        },
+        {
+          "id": "5dsi4mTwzYs",
+          "url": "https://www.youtube.com/watch?v=5dsi4mTwzYs",
+          "source": "youtube",
+          "title": "Peso Pluma, Tito Double P - daño (Official Video)",
+          "artist": "Peso Pluma & Tito Double P",
+          "sort": 35
+        },
+        {
+          "id": "QNJL6nfu__Q",
+          "url": "https://www.youtube.com/watch?v=QNJL6nfu__Q",
+          "source": "youtube",
+          "title": "Michael Jackson - They Don't Care About Us (Official Video)",
+          "artist": "Michael Jackson",
+          "sort": 36
+        },
+        {
+          "id": "co-TFLbaZAE",
+          "url": "https://www.youtube.com/watch?v=co-TFLbaZAE",
+          "source": "youtube",
+          "title": "\"Gabriela\" Performance Video | KATSEYE",
+          "artist": "KATSEYE",
+          "sort": 37
+        },
+        {
+          "id": "yUi_S6YWjZw",
+          "url": "https://www.youtube.com/watch?v=yUi_S6YWjZw",
+          "source": "youtube",
+          "title": "Michael Jackson - Dirty Diana (Official Video)",
+          "artist": "Michael Jackson",
+          "sort": 38
+        },
+        {
+          "id": "VpiM6RDDSko",
+          "url": "https://www.youtube.com/watch?v=VpiM6RDDSko",
+          "source": "youtube",
+          "title": "Hanzel La H, Hades66, Arcángel, Ñengo Flow, Kendo Kaponi, Luar La L - Loyalty 4 Ever (Remix) [Official Video]",
+          "artist": "Hanzel La H ❌ Arcángel ❌ Hades66 ❌ Ñengo Flow ❌ Kendo Kaponi ❌ Luar la L",
+          "sort": 39
+        },
+        {
+          "id": "_gyultVTesk",
+          "url": "https://www.youtube.com/watch?v=_gyultVTesk",
+          "source": "youtube",
+          "title": "BTS (방탄소년단) '2.0' Official MV",
+          "artist": "BTS",
+          "sort": 40
+        },
+        {
+          "id": "Elp1SHhSQ9M",
+          "url": "https://www.youtube.com/watch?v=Elp1SHhSQ9M",
+          "source": "youtube",
+          "title": "Moy Bobadilla, Grupo Firme, Hernan Sepulveda, Max Peraza - Tus Mentiras (Video Oficial)",
+          "artist": "Moy Bobadilla & Grupo Firme & Hernan Sepulveda & Max Peraza",
+          "sort": 41
+        },
+        {
+          "id": "cWppAbqm9I8",
+          "url": "https://www.youtube.com/watch?v=cWppAbqm9I8",
+          "source": "youtube",
+          "title": "\"Your Idol\" Official Lyric Video | KPop Demon Hunters | Sony Animation",
+          "artist": "Saja Boys & Andrew Choi & Neckwav & KPop Demon Hunters Cast",
+          "sort": 42
+        },
+        {
+          "id": "XXIX2WnfbpE",
+          "url": "https://www.youtube.com/watch?v=XXIX2WnfbpE",
+          "source": "youtube",
+          "title": "Lady Gaga, Doechii - RUNWAY (Official Music Video)",
+          "artist": "Lady Gaga & Doechii",
+          "sort": 43
+        },
+        {
+          "id": "lIxQe1R5hs0",
+          "url": "https://www.youtube.com/watch?v=lIxQe1R5hs0",
+          "source": "youtube",
+          "title": "PinkPantheress, Zara Larsson - Stateside + Zara Larsson (Official Music Video)",
+          "artist": "PinkPantheress",
+          "sort": 44
+        },
+        {
+          "id": "F1sLPnWV6Jk",
+          "url": "https://www.youtube.com/watch?v=F1sLPnWV6Jk",
+          "source": "youtube",
+          "title": "Tito Double P - POR SUS BESOS (Official Music Video)",
+          "artist": "Tito Double P",
+          "sort": 45
+        },
+        {
+          "id": "2wI4_-aMSk0",
+          "url": "https://www.youtube.com/watch?v=2wI4_-aMSk0",
+          "source": "youtube",
+          "title": "YoungBoy Never Broke Again - Bruce Wayne [Official Video]",
+          "artist": "YoungBoy Never Broke Again",
+          "sort": 46
+        },
+        {
+          "id": "YBUCyBB8IJo",
+          "url": "https://www.youtube.com/watch?v=YBUCyBB8IJo",
+          "source": "youtube",
+          "title": "YoungBoy Never Broke Again - Wine & Dine [Official Music Video]",
+          "artist": "YoungBoy Never Broke Again",
+          "sort": 47
+        },
+        {
+          "id": "KFMYx1TibeQ",
+          "url": "https://www.youtube.com/watch?v=KFMYx1TibeQ",
+          "source": "youtube",
+          "title": "Kehlani - Folded (Official Music Video)",
+          "artist": "Kehlani",
+          "sort": 48
+        },
+        {
+          "id": "78wrful9cVU",
+          "url": "https://www.youtube.com/watch?v=78wrful9cVU",
+          "source": "youtube",
+          "title": "Olivia Rodrigo - drop dead (you know all the words - isolated vocals)",
+          "artist": "Olivia Rodrigo",
+          "sort": 49
+        },
+        {
+          "id": "YNzuiRuQNYY",
+          "url": "https://www.youtube.com/watch?v=YNzuiRuQNYY",
+          "source": "youtube",
+          "title": "Michael Jackson - Human Nature (Official Music Video)",
+          "artist": "Michael Jackson",
+          "sort": 50
         }
       ]
     }
