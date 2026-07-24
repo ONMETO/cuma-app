@@ -41,11 +41,18 @@ const ClickSpark: React.FC<ClickSparkProps> = ({
 
     let resizeTimeout: ReturnType<typeof setTimeout>;
 
+    let lastW = 0;
+    let lastH = 0;
+
     const resizeCanvas = () => {
       const { width, height } = parent.getBoundingClientRect();
-      if (canvas.width !== width || canvas.height !== height) {
-        canvas.width = width;
-        canvas.height = height;
+      const w = Math.round(width);
+      const h = Math.round(height);
+      if (w !== lastW || Math.abs(h - lastH) > 120 || canvas.width === 0) {
+        canvas.width = w;
+        canvas.height = h;
+        lastW = w;
+        lastH = h;
       }
     };
 

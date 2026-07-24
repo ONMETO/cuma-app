@@ -306,13 +306,26 @@ const Galaxy: React.FC<GalaxyProps> = ({
       animationId = requestAnimationFrame(render);
     };
 
+    let lastWidth = window.innerWidth;
+    let lastHeight = window.innerHeight;
+
     const handleResize = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+      const newWidth = window.innerWidth;
+      const newHeight = window.innerHeight;
+      
+      // Only resize canvas if width changed or height changed significantly (e.g. orientation change)
+      // Ignore minor height changes caused by mobile browser address bar expanding/collapsing on scroll
+      if (newWidth !== lastWidth || Math.abs(newHeight - lastHeight) > 120 || canvas.width === 0) {
+        canvas.width = newWidth;
+        canvas.height = newHeight;
+        lastWidth = newWidth;
+        lastHeight = newHeight;
+      }
     };
 
     window.addEventListener('resize', handleResize);
-    handleResize();
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
     animationId = requestAnimationFrame(render);
 
     const handleMouseMove = (e: MouseEvent) => {

@@ -1,66 +1,216 @@
-import React from 'react';
-import { motion } from 'motion/react';
-import { Music, ImageIcon, PlaySquare, Activity, Compass } from 'lucide-react';
-import { cn } from '../utils/cn';
+import React, { useState, useEffect, useRef } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
+import { ChevronRight } from 'lucide-react';
 import appleLogo from '../../assets/apple_logo.svg';
 import ScrollReveal from './ui/ScrollReveal';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useGSAP } from '@gsap/react';
 
-const FeatureCard = ({
-  className,
-  title,
-  description,
-  icon: Icon,
-  imageSrc,
-  large = false,
-  delay = 0,
-}: {
-  className?: string;
+gsap.registerPlugin(ScrollTrigger);
+ScrollTrigger.config({ ignoreMobileResize: true });
+
+// Feature item data structure
+interface Feature {
+  id: string;
   title: string;
   description: string;
-  icon: any;
-  imageSrc?: string;
-  large?: boolean;
-  delay?: number;
-}) => (
-  <ScrollReveal delay={delay} className={cn("w-full h-full", className)}>
-    <motion.div
-      whileHover={{ scale: 0.98 }}
-      transition={{ duration: 0.3 }}
-      className={cn(
-        "group relative h-full overflow-hidden bg-neutral-950 border border-neutral-800 rounded-[2rem] p-8 flex flex-col justify-between hover:border-neutral-700 transition-colors"
-      )}
-    >
-      {imageSrc && (
-        <div className="absolute inset-0 opacity-40 group-hover:opacity-60 transition-all duration-700 ease-out z-0">
-          <img src={imageSrc} alt={title} className="w-full h-full object-cover grayscale group-hover:scale-105 transition-transform duration-700" />
-        </div>
-      )}
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20 z-10" />
+  images: string[];
+}
 
-      <div className="relative z-20 flex justify-between items-start w-full">
-        <div className="w-12 h-12 bg-white/10 backdrop-blur-md rounded-2xl flex items-center justify-center border border-white/20 text-white shadow-lg">
-          <Icon className="w-6 h-6" />
-        </div>
-        {large && (
-          <span className="text-white/60 text-xs font-bold uppercase tracking-[0.2em]">Featured</span>
+const featuresData: Feature[] = [
+  {
+    id: "ai-gen",
+    title: "AI Generation.",
+    description: "Create stunning custom covers and personalized playlists tailored entirely to your current mood, generated in seconds by our advanced AI model.",
+    images: [
+      "https://images.unsplash.com/photo-1744658841066-0691ab198343?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1614680376593-902f74fa0d41?q=80&w=1080&auto=format&fit=crop"
+    ]
+  },
+  {
+    id: "wallpaper",
+    title: "Wallpaper Conversion.",
+    description: "Turn any album artwork into a stunning, high-resolution device wallpaper with a single tap.",
+    images: [
+      "https://images.unsplash.com/photo-1607699265032-3eafa2806ae6?q=80&w=1080&auto=format&fit=crop"
+    ]
+  },
+  {
+    id: "gif-share",
+    title: "GIF Sharing.",
+    description: "Share your favorite lyrical moments effortlessly as beautiful, dynamic animated GIFs.",
+    images: [
+      "https://images.unsplash.com/photo-1735305741501-687208b7ec2d?q=80&w=1080&auto=format&fit=crop"
+    ]
+  },
+  {
+    id: "nearby",
+    title: "Nearby Discovery.",
+    description: "Discover what people around you are listening to in real-time. Connect through shared musical tastes in your vicinity.",
+    images: [
+      "https://images.unsplash.com/photo-1761344175797-047f049c9b32?q=80&w=1080&auto=format&fit=crop"
+    ]
+  },
+  {
+    id: "pace",
+    title: "Pace Rhythm.",
+    description: "Synchronize your breathing and workout pace directly to the underlying beat of your tracks.",
+    images: [
+      "https://images.unsplash.com/photo-1608682285597-156feb50eb4e?q=80&w=1080&auto=format&fit=crop"
+    ]
+  }
+];
+
+const FeatureRow = ({
+  feature,
+  index,
+}: {
+  feature: Feature;
+  index: number;
+}) => {
+  const [currentImgIndex, setCurrentImgIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
+  const rowRef = useRef<HTMLDivElement>(null);
+
+  // Auto-play logic for carousel
+  useEffect(() => {
+    if (feature.images.length <= 1 || isHovered) return;
+    const interval = setInterval(() => {
+      setCurrentImgIndex((prev) => (prev + 1) % feature.images.length);
+    }, 4500);
+    return () => clearInterval(interval);
+  }, [isHovered, feature.images.length]);
+
+  // GSAP scroll-driven animation matching Option A
+  useGSAP(() => {
+    gsap.fromTo(
+      rowRef.current?.querySelector('.feature-image-container'),
+      {
+        opacity: 0,
+        scale: 0.92,
+        y: 40
+      },
+      {
+        opacity: 1,
+        scale: 1,
+        y: 0,
+        scrollTrigger: {
+          trigger: rowRef.current,
+          start: "top 95%",
+          end: "top 45%",
+          scrub: 1
+        }
+      }
+    );
+
+    gsap.fromTo(
+      rowRef.current?.querySelector('.feature-text-container'),
+      {
+        opacity: 0,
+        y: 60
+      },
+      {
+        opacity: 1,
+        y: 0,
+        scrollTrigger: {
+          trigger: rowRef.current,
+          start: "top 90%",
+          end: "top 40%",
+          scrub: 1
+        }
+      }
+    );
+  }, { scope: rowRef });
+
+  const handleNext = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setCurrentImgIndex((prev) => (prev + 1) % feature.images.length);
+  };
+
+  const handleDotClick = (i: number, e: React.MouseEvent) => {
+    e.stopPropagation();
+    setCurrentImgIndex(i);
+  };
+
+  const showControls = feature.images.length > 1;
+
+  return (
+    <div 
+      ref={rowRef}
+      className="flex flex-col md:flex-row gap-8 md:gap-16 items-center w-full py-16 md:py-24 border-b border-neutral-900/50 last:border-0"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      {/* Yellow Area (Left/Top) - Image Area */}
+      <div className="feature-image-container w-full md:w-[55%] aspect-[4/3] relative rounded-[1.5rem] overflow-hidden bg-neutral-950 border border-neutral-800 shrink-0 select-none shadow-lg">
+        <AnimatePresence mode="wait">
+          <motion.img
+            key={currentImgIndex}
+            src={feature.images[currentImgIndex]}
+            alt={`${feature.title} ${currentImgIndex + 1}`}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-103"
+          />
+        </AnimatePresence>
+        
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none z-10" />
+
+        {/* Carousel Navigation Controls (Shown only if images.length > 1) */}
+        {showControls && (
+          <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 flex items-center gap-3 bg-neutral-900 border border-neutral-800 rounded-full px-4 py-2 text-white z-20 shadow-xl">
+            {/* Pagination Dots */}
+            <div className="flex gap-1.5">
+              {feature.images.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={(e) => handleDotClick(i, e)}
+                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                    i === currentImgIndex ? 'bg-white w-4' : 'bg-neutral-600 hover:bg-neutral-500'
+                  }`}
+                  aria-label={`Go to slide ${i + 1}`}
+                />
+              ))}
+            </div>
+            
+            {/* Vertical divider */}
+            <div className="w-[1px] h-4 bg-neutral-800" />
+            
+            {/* Next arrow button */}
+            <button
+              onClick={handleNext}
+              className="w-7 h-7 rounded-full bg-neutral-800 hover:bg-neutral-700 border border-neutral-700 flex items-center justify-center transition-colors text-white cursor-pointer"
+              aria-label="Next slide"
+            >
+              <ChevronRight className="w-4 h-4" />
+            </button>
+          </div>
         )}
       </div>
 
-      <div className="relative z-20 mt-16">
-        <h3 className={cn("text-white font-bold mb-3 tracking-tight", large ? "text-4xl lg:text-5xl" : "text-2xl")}>
-          {title}
+      {/* Red Area (Right/Bottom) - Title/Description Area */}
+      <div className="feature-text-container w-full md:w-[45%] flex flex-col justify-center">
+        {/* Title */}
+        <h3 className="text-white font-black text-3xl sm:text-4xl lg:text-5xl tracking-tight leading-tight mb-4">
+          {feature.title}
         </h3>
-        <p className={cn("text-neutral-300 font-medium leading-relaxed drop-shadow-md", large ? "text-lg max-w-md" : "text-base")}>
-          {description}
+        
+        {/* Description */}
+        <p className="text-neutral-400 text-base sm:text-lg leading-relaxed max-w-lg font-medium">
+          {feature.description}
         </p>
       </div>
-    </motion.div>
-  </ScrollReveal>
-);
+    </div>
+  );
+};
 
 export const BentoFeatures = () => {
   return (
     <div id="features" className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 relative z-10">
+      {/* Section Header */}
       <div className="mb-16">
         <ScrollReveal direction="left" delay={0.1}>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tighter mb-6 uppercase leading-[0.9]">
@@ -80,55 +230,15 @@ export const BentoFeatures = () => {
         </ScrollReveal>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-3 gap-6 h-auto md:h-[900px]">
-        {/* Item 1: AI Covers */}
-        <FeatureCard
-          className="md:col-span-2 md:row-span-2"
-          large
-          title="AI Generation."
-          description="Create stunning custom covers and personalized playlists tailored entirely to your current mood, generated in seconds by our advanced AI model."
-          icon={Music}
-          imageSrc="https://images.unsplash.com/photo-1744658841066-0691ab198343?q=80&w=1080&auto=format&fit=crop"
-          delay={0.1}
-        />
-
-        {/* Item 2: Wallpaper */}
-        <FeatureCard
-          className="md:col-span-1 md:row-span-1"
-          title="Wallpaper Conversion."
-          description="Turn any album artwork into a stunning, high-resolution device wallpaper with a single tap."
-          icon={ImageIcon}
-          imageSrc="https://images.unsplash.com/photo-1607699265032-3eafa2806ae6?q=80&w=1080&auto=format&fit=crop"
-          delay={0.2}
-        />
-
-        {/* Item 3: GIF Sharing */}
-        <FeatureCard
-          className="md:col-span-1 md:row-span-1"
-          title="GIF Sharing."
-          description="Share your favorite lyrical moments effortlessly as beautiful, dynamic animated GIFs."
-          icon={PlaySquare}
-          delay={0.3}
-        />
-
-        {/* Item 4: Nearby */}
-        <FeatureCard
-          className="md:col-span-2 md:row-span-1"
-          title="Nearby Discovery."
-          description="Discover what people around you are listening to in real-time. Connect through shared musical tastes in your vicinity."
-          icon={Compass}
-          delay={0.4}
-        />
-
-        {/* Item 5: Sports Breathing */}
-        <FeatureCard
-          className="md:col-span-1 md:row-span-1"
-          title="Pace Rhythm."
-          description="Synchronize your breathing and workout pace directly to the underlying beat of your tracks."
-          icon={Activity}
-          imageSrc="https://images.unsplash.com/photo-1608682285597-156feb50eb4e?q=80&w=1080&auto=format&fit=crop"
-          delay={0.5}
-        />
+      {/* Feature Rows */}
+      <div className="flex flex-col">
+        {featuresData.map((feature, index) => (
+          <FeatureRow
+            key={feature.id}
+            feature={feature}
+            index={index}
+          />
+        ))}
       </div>
     </div>
   );

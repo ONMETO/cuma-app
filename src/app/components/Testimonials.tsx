@@ -79,7 +79,7 @@ const ReviewCard = ({
 
 export function Testimonials() {
   return (
-    <section className="relative flex w-full flex-col items-center justify-center overflow-hidden py-32 z-10 border-t border-neutral-900 bg-black">
+    <section id="about" className="relative flex w-full flex-col items-center justify-center overflow-hidden py-32 z-10 border-t border-neutral-900 bg-black">
       <div className="mb-16 text-center px-4">
         <ScrollReveal direction="up" delay={0.1}>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tighter mb-4 uppercase">
