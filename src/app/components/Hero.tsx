@@ -15,16 +15,16 @@ export const Hero = () => {
       <div className="relative z-20 flex flex-col items-center text-center px-4 max-w-5xl mx-auto space-y-8 mt-36 md:mt-52 pointer-events-auto">
         <ScrollReveal direction="up" delay={0.1}>
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[0.95] font-black tracking-tighter text-white drop-shadow-2xl">
-            Your listening rhythm, <br />
+            Redefine your <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-b from-white via-neutral-300 to-neutral-700">
-              redefine.
+              listening rhythm.
             </span>
           </h1>
         </ScrollReveal>
 
         <ScrollReveal direction="up" delay={0.2}>
           <p className="text-lg md:text-2xl text-neutral-300 max-w-2xl font-medium tracking-tight">
-            Immerse yourself in AI-generated covers, precise breathing beats, and nearby discoveries. The ultimate musical companion.
+            Own your rhythm. Enjoy AI-curated music lists and covers made just for you, and share your musical life through visual stories.
           </p>
         </ScrollReveal>
 

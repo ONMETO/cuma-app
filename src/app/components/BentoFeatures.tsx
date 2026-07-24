@@ -20,44 +20,44 @@ interface Feature {
 
 const featuresData: Feature[] = [
   {
-    id: "ai-gen",
-    title: "AI Generation.",
-    description: "Create stunning custom covers and personalized playlists tailored entirely to your current mood, generated in seconds by our advanced AI model.",
+    id: "pace",
+    title: "Move to your own rhythm",
+    description: "Sync your breathing and workout pace directly to the underlying beat of your tracks. Let BPM-guided timing help you stay centered, active, and in the zone.",
+    images: [
+      "https://images.unsplash.com/photo-1608682285597-156feb50eb4e?q=80&w=1080&auto=format&fit=crop"
+    ]
+  },
+  {
+    id: "mood-playlists",
+    title: "Playlists and covers for every mood",
+    description: "Turn any feeling into a matching playlist with custom album art in seconds. Our AI matches your vibe and styles your cover, instantly ready to save.",
     images: [
       "https://images.unsplash.com/photo-1744658841066-0691ab198343?q=80&w=1080&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1614680376593-902f74fa0d41?q=80&w=1080&auto=format&fit=crop"
     ]
   },
   {
-    id: "wallpaper",
-    title: "Wallpaper Conversion.",
-    description: "Turn any album artwork into a stunning, high-resolution device wallpaper with a single tap.",
-    images: [
-      "https://images.unsplash.com/photo-1607699265032-3eafa2806ae6?q=80&w=1080&auto=format&fit=crop"
-    ]
-  },
-  {
-    id: "gif-share",
-    title: "GIF Sharing.",
-    description: "Share your favorite lyrical moments effortlessly as beautiful, dynamic animated GIFs.",
+    id: "life-album-art",
+    title: "Turn your life into album art",
+    description: "Transform your daily moments into custom covers. Share your musical vibe directly to Instagram Stories, Moments, and beyond.",
     images: [
       "https://images.unsplash.com/photo-1735305741501-687208b7ec2d?q=80&w=1080&auto=format&fit=crop"
     ]
   },
   {
-    id: "nearby",
-    title: "Nearby Discovery.",
-    description: "Discover what people around you are listening to in real-time. Connect through shared musical tastes in your vicinity.",
+    id: "music-videos",
+    title: "Music videos, right in your flow",
+    description: "Connect directly to official YouTube tracks in one tap. Fuel your mood with high-energy visuals and top-chart hits.",
     images: [
-      "https://images.unsplash.com/photo-1761344175797-047f049c9b32?q=80&w=1080&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1633966448341-4b8e20e6ddd6?q=80&w=1080&auto=format&fit=crop"
     ]
   },
   {
-    id: "pace",
-    title: "Pace Rhythm.",
-    description: "Synchronize your breathing and workout pace directly to the underlying beat of your tracks.",
+    id: "global-charts",
+    title: "Global charts, straight to you",
+    description: "Access daily top hits and global charts powered directly by Apple Music. Discover fresh tracks and stay connected to what's trending.",
     images: [
-      "https://images.unsplash.com/photo-1608682285597-156feb50eb4e?q=80&w=1080&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1761344175797-047f049c9b32?q=80&w=1080&auto=format&fit=crop"
     ]
   }
 ];

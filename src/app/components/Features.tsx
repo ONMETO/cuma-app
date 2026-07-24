@@ -31,51 +31,37 @@ interface Feature {
 
 const features: Feature[] = [
   {
-    label: "Cover Art",
-    title: "AI-generated artwork\nfrom your music",
-    desc: "Lyrics, tempo, mood — Melo reads them all to make a one-of-a-kind cover.",
-    image: IMG_COVER,
-    accent: "from-violet-600/40 to-purple-600/20",
-  },
-  {
-    label: "Wallpapers",
-    title: "Turn covers into\nphone wallpapers",
-    desc: "Intelligent portrait-fill that respects composition and palette.",
-    image: IMG_SWIRL,
-    accent: "from-fuchsia-600/40 to-pink-600/20",
-  },
-  {
-    label: "Motion Share",
-    title: "Share songs as\nliving images",
-    desc: "Animated loops synced to your track — for IG Stories, Moments & more.",
-    image: IMG_VINYL,
-    accent: "from-rose-600/40 to-orange-600/20",
-  },
-  {
     label: "Breathe",
-    title: "Sync your breathing\nto the beat",
-    desc: "BPM-guided breathing during workouts. Just run — Melo does the rest.",
+    title: "Move to your own rhythm",
+    desc: "Sync your breathing and workout pace directly to the underlying beat of your tracks. Let BPM-guided timing help you stay centered, active, and in the zone.",
     image: IMG_RUNNER,
     accent: "from-emerald-600/40 to-teal-600/20",
   },
   {
     label: "Smart Playlists",
-    title: "Describe it.\nWe'll build it.",
-    desc: "\"Late night lo-fi for coding\" — playlist built and imported in seconds.",
+    title: "Playlists and covers for every mood",
+    desc: "Turn any feeling into a matching playlist with custom album art in seconds. Our AI matches your vibe and styles your cover, instantly ready to save.",
     image: IMG_HEADPHONES,
     accent: "from-blue-600/40 to-indigo-600/20",
   },
   {
+    label: "Cover Art",
+    title: "Turn your life into album art",
+    desc: "Transform your daily moments into custom covers. Share your musical vibe directly to Instagram Stories, Moments, and beyond.",
+    image: IMG_COVER,
+    accent: "from-violet-600/40 to-purple-600/20",
+  },
+  {
     label: "Music Videos",
-    title: "Official MVs,\nbuilt in",
-    desc: "Watch music videos without leaving the app. PiP supported.",
+    title: "Music videos, right in your flow",
+    desc: "Connect directly to official YouTube tracks in one tap. Fuel your mood with high-energy visuals and top-chart hits.",
     image: IMG_CONCERT,
     accent: "from-amber-600/40 to-red-600/20",
   },
   {
-    label: "Nearby",
-    title: "Discover what people around you are listening to",
-    desc: "Real-time listening data from people nearby — café, gym, subway. Music through real humans, not algorithms.",
+    label: "Global Charts",
+    title: "Global charts, straight to you",
+    desc: "Access daily top hits and global charts powered directly by Apple Music. Discover fresh tracks and stay connected to what's trending.",
     image: IMG_CITY,
     accent: "from-sky-600/40 to-blue-600/20",
   },
@@ -238,10 +224,10 @@ export function Features() {
           className="hidden md:grid gap-4"
           style={{
             gridTemplateColumns: "repeat(3, 1fr)",
-            gridTemplateRows: "300px 300px 280px 220px",
+            gridTemplateRows: "300px 300px 220px",
           }}
         >
-          {/* Cover Art — 2 cols × 2 rows */}
+          {/* Feature 1 — 2 cols × 2 rows */}
           <PosterCard
             feature={features[0]}
             index={0}
@@ -249,27 +235,21 @@ export function Features() {
             className="col-span-2 row-span-2"
           />
 
-          {/* Wallpapers — 1 col, row 1 */}
+          {/* Feature 2 — 1 col, row 1 */}
           <PosterCard feature={features[1]} index={1} className="col-span-1" />
 
-          {/* Motion Share — 1 col, row 2 */}
+          {/* Feature 3 — 1 col, row 2 */}
           <PosterCard feature={features[2]} index={2} className="col-span-1" />
 
-          {/* Breathe */}
-          <PosterCard feature={features[3]} index={3} />
+          {/* Feature 4 — 1 col, row 3 */}
+          <PosterCard feature={features[3]} index={3} className="col-span-1" />
 
-          {/* Smart Playlists */}
-          <PosterCard feature={features[4]} index={4} />
-
-          {/* Music Videos */}
-          <PosterCard feature={features[5]} index={5} />
-
-          {/* Nearby — full width */}
+          {/* Feature 5 — 2 cols, row 3 */}
           <PosterCard
-            feature={features[6]}
-            index={6}
+            feature={features[4]}
+            index={4}
             textSize="wide"
-            className="col-span-3"
+            className="col-span-2"
           />
         </div>
       </div>
