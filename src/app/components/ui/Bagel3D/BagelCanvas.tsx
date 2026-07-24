@@ -5,10 +5,10 @@ import { DebrisField } from './DebrisField';
 import { ScrollPhysics } from './ScrollPhysics';
 
 interface BagelCanvasProps {
-  heroRef: React.RefObject<HTMLDivElement | null>;
+  heroRef?: React.RefObject<HTMLDivElement | null>;
 }
 
-export const BagelCanvas: React.FC<BagelCanvasProps> = ({ heroRef }) => {
+export const BagelCanvas: React.FC<BagelCanvasProps> = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -124,7 +124,7 @@ export const BagelCanvas: React.FC<BagelCanvasProps> = ({ heroRef }) => {
     const handleWheel = (e: WheelEvent) => {
       const scrollY = window.scrollY || document.documentElement.scrollTop;
 
-      // If at absolute top of page
+      // If at top of page
       if (scrollY <= 5) {
         // Case A: Bagel is rolling (not yet at right edge) -> lock page and apply wheel impulse
         if (physics.positionX < bounds.rightX - 0.01) {
@@ -228,12 +228,17 @@ export const BagelCanvas: React.FC<BagelCanvasProps> = ({ heroRef }) => {
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('resize', handleResize);
 
+      // Clean up GPU resources
+      envTexture.dispose();
+      bagel.dispose();
+      debrisField.dispose();
+
       if (renderer.domElement.parentNode) {
         renderer.domElement.parentNode.removeChild(renderer.domElement);
       }
       renderer.dispose();
     };
-  }, [heroRef]);
+  }, []);
 
   return (
     <div

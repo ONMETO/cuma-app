@@ -11,6 +11,9 @@ export class DebrisField {
   public group: THREE.Group;
   public orbits: Orbit[];
 
+  private materialsToDispose: THREE.Material[] = [];
+  private geometriesToDispose: THREE.BufferGeometry[] = [];
+
   constructor() {
     this.group = new THREE.Group();
 
@@ -32,23 +35,32 @@ export class DebrisField {
   private createDebris() {
     const sesameGeo = new THREE.SphereGeometry(0.05, 8, 6);
     sesameGeo.scale(0.8, 1.8, 0.6);
+    this.geometriesToDispose.push(sesameGeo);
+
     const whiteMat = new THREE.MeshStandardMaterial({
       color: 0xfefae0,
       roughness: 0.4,
       metalness: 0.1,
     });
+    this.materialsToDispose.push(whiteMat);
+
     const blackMat = new THREE.MeshStandardMaterial({
       color: 0x1f1f23,
       roughness: 0.6,
       metalness: 0.1,
     });
+    this.materialsToDispose.push(blackMat);
+
     const saltGeo = new THREE.BoxGeometry(0.055, 0.055, 0.055);
+    this.geometriesToDispose.push(saltGeo);
+
     const saltMat = new THREE.MeshStandardMaterial({
       color: 0xffffff,
       roughness: 0.1,
       transparent: true,
       opacity: 0.85,
     });
+    this.materialsToDispose.push(saltMat);
 
     const populateOrbit = (orbitGroup: THREE.Group, count: number, minR: number, maxR: number) => {
       const whiteMesh = new THREE.InstancedMesh(sesameGeo, whiteMat, count);
@@ -102,5 +114,10 @@ export class DebrisField {
       orbit.group.rotation.z = time * orbit.speed;
       orbit.group.rotation.x = orbit.tiltX + Math.sin(time * 0.4 + index) * 0.04;
     });
+  }
+
+  public dispose() {
+    this.geometriesToDispose.forEach((g) => g.dispose());
+    this.materialsToDispose.forEach((m) => m.dispose());
   }
 }

@@ -168,6 +168,7 @@ export class BagelGenerator {
           added++;
         }
       }
+      instancedMesh.count = added;
       instancedMesh.instanceMatrix.needsUpdate = true;
       instancedMesh.castShadow = true;
       instancedMesh.receiveShadow = true;
@@ -180,5 +181,41 @@ export class BagelGenerator {
     this.group.add(this.seedsInstancedMesh);
     this.group.add(this.blackSeedsInstancedMesh);
     this.group.add(this.saltInstancedMesh);
+  }
+
+  public dispose() {
+    this.bumpTexture.dispose();
+    if (this.bodyMesh) {
+      this.bodyMesh.geometry.dispose();
+      if (Array.isArray(this.bodyMesh.material)) {
+        this.bodyMesh.material.forEach((m) => m.dispose());
+      } else {
+        this.bodyMesh.material.dispose();
+      }
+    }
+    if (this.seedsInstancedMesh) {
+      this.seedsInstancedMesh.geometry.dispose();
+      if (Array.isArray(this.seedsInstancedMesh.material)) {
+        this.seedsInstancedMesh.material.forEach((m) => m.dispose());
+      } else {
+        this.seedsInstancedMesh.material.dispose();
+      }
+    }
+    if (this.blackSeedsInstancedMesh) {
+      this.blackSeedsInstancedMesh.geometry.dispose();
+      if (Array.isArray(this.blackSeedsInstancedMesh.material)) {
+        this.blackSeedsInstancedMesh.material.forEach((m) => m.dispose());
+      } else {
+        this.blackSeedsInstancedMesh.material.dispose();
+      }
+    }
+    if (this.saltInstancedMesh) {
+      this.saltInstancedMesh.geometry.dispose();
+      if (Array.isArray(this.saltInstancedMesh.material)) {
+        this.saltInstancedMesh.material.forEach((m) => m.dispose());
+      } else {
+        this.saltInstancedMesh.material.dispose();
+      }
+    }
   }
 }
