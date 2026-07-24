@@ -43,4 +43,10 @@ coverage
 
 # Kiro configuration
 .kiro
+.kiro/
 MUSIC_DATA_SPEC.md
+
+# Local notes folder
+git ingnore 文件夹/
+git ignore 文件夹/
+
