@@ -8,11 +8,11 @@ export const Hero = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div ref={containerRef} className="relative w-full min-h-screen flex items-center justify-center pt-36 pb-28 overflow-hidden z-10">
+    <div ref={containerRef} className="relative w-full min-h-screen flex items-center justify-center pt-32 pb-24 overflow-hidden z-10">
       {/* 3D Everything Bagel Canvas Overlay */}
       <BagelCanvas heroRef={containerRef} />
 
-      <div className="relative z-20 flex flex-col items-center text-center px-4 max-w-5xl mx-auto space-y-10 mt-20 md:mt-32 pointer-events-auto">
+      <div className="relative z-20 flex flex-col items-center text-center px-4 max-w-5xl mx-auto space-y-8 mt-36 md:mt-52 pointer-events-auto">
         <ScrollReveal direction="up" delay={0.1}>
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[0.95] font-black tracking-tighter text-white drop-shadow-2xl">
             Your listening rhythm, <br />
