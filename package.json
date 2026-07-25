@@ -8,7 +8,7 @@
     "build": "vite build",
     "dev": "vite",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist --nojekyll"
+    "deploy": "gh-pages -d dist -t"
   },
   "dependencies": {
     "@emotion/react": "11.14.0",
