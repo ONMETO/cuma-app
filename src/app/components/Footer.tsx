@@ -2,12 +2,12 @@ import React from 'react';
 import logoImg from '../../assets/logo.png';
 
 interface FooterProps {
-  onNavigate?: (type: 'privacy' | 'terms') => void;
+  onNavigate?: (type: 'privacy' | 'terms' | 'contact' | 'partnerships') => void;
   onNavigateHome?: () => void;
 }
 
 export const Footer: React.FC<FooterProps> = ({ onNavigate, onNavigateHome }) => {
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, type: 'privacy' | 'terms') => {
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, type: 'privacy' | 'terms' | 'contact' | 'partnerships') => {
     e.preventDefault();
     if (onNavigate) {
       onNavigate(type);
@@ -26,7 +26,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onNavigateHome }) =>
           <span className="text-white font-semibold text-lg tracking-tight">Bagel Muse</span>
         </div>
         
-        <div className="flex gap-6 text-sm text-neutral-400">
+        <div className="flex flex-wrap justify-center gap-6 text-sm text-neutral-400">
           <a 
             href="#" 
             onClick={(e) => handleNavClick(e, 'privacy')}
@@ -41,7 +41,20 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onNavigateHome }) =>
           >
             Terms
           </a>
-          <a href="#" className="hover:text-white transition-colors">Contact</a>
+          <a 
+            href="#" 
+            onClick={(e) => handleNavClick(e, 'contact')}
+            className="hover:text-white transition-colors"
+          >
+            Contact
+          </a>
+          <a 
+            href="#" 
+            onClick={(e) => handleNavClick(e, 'partnerships')}
+            className="hover:text-white transition-colors"
+          >
+            Partnerships
+          </a>
         </div>
         
         <p className="text-sm text-neutral-600">

@@ -5,10 +5,11 @@ import { BentoFeatures } from './components/BentoFeatures';
 import { Testimonials } from './components/Testimonials';
 import { Footer } from './components/Footer';
 import { DocPage } from './components/DocPage';
+import { ContactPage } from './components/ContactPage';
 import Galaxy from './components/ui/Galaxy';
 import ClickSpark from './components/ui/ClickSpark';
 
-type ActiveView = 'landing' | 'region-select' | 'doc-viewer';
+type ActiveView = 'landing' | 'region-select' | 'doc-viewer' | 'contact';
 type DocType = 'privacy' | 'terms';
 type Region = 'tw' | 'jp' | 'en';
 
@@ -26,14 +27,20 @@ export default function App() {
     let targetRegion: Region | null = null;
     let targetDocType: DocType = 'privacy';
 
-    // 1. Parse EULA/Privacy Type
+    // 1. Handle Contact & Partnerships View
+    if (urlView === 'contact' || urlView === 'partnerships' || urlView === 'investors') {
+      setView('contact');
+      return;
+    }
+
+    // 2. Parse EULA/Privacy Type
     if (urlView === 'terms' || urlView === 'eula') {
       targetDocType = 'terms';
     } else if (urlView === 'privacy') {
       targetDocType = 'privacy';
     }
 
-    // 2. Parse Region from URL or detect from Browser
+    // 3. Parse Region from URL or detect from Browser
     if (urlRegion) {
       if (urlRegion === 'tw' || urlRegion.includes('tw') || urlRegion.includes('taiwan')) {
         targetRegion = 'tw';
@@ -54,7 +61,7 @@ export default function App() {
       else if (isEn) targetRegion = 'en';
     }
 
-    // 3. Navigate if view or region is parsed from URL
+    // 4. Navigate if view or region is parsed from URL
     if (urlView || urlRegion) {
       setDocType(targetDocType);
       if (targetRegion) {
@@ -72,7 +79,13 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const handleNavigateDoc = (type: DocType) => {
+  const handleNavigateFooter = (type: 'privacy' | 'terms' | 'contact' | 'partnerships') => {
+    if (type === 'contact' || type === 'partnerships') {
+      setView('contact');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
     setDocType(type);
     
     // Check browser locale when navigating from footer
@@ -92,8 +105,8 @@ export default function App() {
     } else {
       setView('region-select');
     }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-
 
   return (
     <div className="min-h-screen bg-black text-white font-sans selection:bg-white selection:text-black overflow-x-hidden">
@@ -110,6 +123,8 @@ export default function App() {
               <BentoFeatures />
               <Testimonials />
             </>
+          ) : view === 'contact' ? (
+            <ContactPage onNavigateHome={handleNavigateHome} />
           ) : (
             <DocPage
               view={view}
@@ -122,7 +137,9 @@ export default function App() {
           )}
         </main>
         
-        <Footer onNavigate={handleNavigateDoc} onNavigateHome={handleNavigateHome} />
+        {view !== 'contact' && (
+          <Footer onNavigate={handleNavigateFooter} onNavigateHome={handleNavigateHome} />
+        )}
       </ClickSpark>
     </div>
   );
