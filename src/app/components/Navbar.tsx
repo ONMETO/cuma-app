@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import logoImg from '../../assets/logo.png';
 
 interface NavbarProps {
   currentView: 'landing' | 'region-select' | 'doc-viewer';
@@ -57,10 +58,12 @@ export const Navbar: React.FC<NavbarProps> = ({ currentView, onNavigateHome }) =
     <nav className="fixed top-0 inset-x-0 z-50 bg-black/80 backdrop-blur-md border-b border-neutral-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         <div onClick={handleLogoClick} className="flex items-center gap-3 cursor-pointer select-none">
-          <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(255,255,255,0.3)]">
-            <span className="text-black font-bold text-xl leading-none">M</span>
-          </div>
-          <span className="text-white font-bold text-xl tracking-tight">Melo</span>
+          <img
+            src={logoImg}
+            alt="Bagel Muse"
+            className="w-8 h-8 rounded-lg object-contain border border-neutral-800 shadow-[0_0_15px_rgba(255,255,255,0.15)]"
+          />
+          <span className="text-white font-bold text-xl tracking-tight">Bagel Muse</span>
         </div>
         
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-neutral-200">

@@ -68,7 +68,7 @@ export function Showcase() {
               <div className="w-[260px] sm:w-[300px] rounded-[40px] overflow-hidden border-[5px] border-white/[0.06] bg-[#111] shadow-2xl shadow-black/40">
                 <img
                   src={IMG_PHONE}
-                  alt="Melo app"
+                  alt="Bagel Muse app"
                   className="w-full aspect-[9/19] object-cover"
                 />
               </div>

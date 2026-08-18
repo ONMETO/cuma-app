@@ -9,7 +9,7 @@ const reviews = [
   {
     name: "Sarah K.",
     role: "Music Producer",
-    text: "I stopped using Canva for album art. Melo just gets it—every cover feels like it was made by someone who actually listened to the track.",
+    text: "I stopped using Canva for album art. Bagel Muse just gets it—every cover feels like it was made by someone who actually listened to the track.",
     stars: 5,
     gradient: "from-violet-500/20 to-blue-500/20",
   },

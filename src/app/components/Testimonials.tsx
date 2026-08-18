@@ -7,7 +7,7 @@ const reviews = [
   {
     name: "Alex Rivera",
     username: "@arivera",
-    body: "Melo completely changed how I experience music on my daily runs. The pace rhythm is unreal.",
+    body: "Bagel Muse completely changed how I experience music on my daily runs. The pace rhythm is unreal.",
     img: "https://avatar.vercel.sh/alex",
   },
   {
@@ -88,7 +88,7 @@ export function Testimonials() {
         </ScrollReveal>
         <ScrollReveal direction="up" delay={0.3}>
           <p className="text-lg text-neutral-400 font-medium max-w-xl mx-auto">
-            See what our early adopters have to say about Melo. Join the beta today.
+            See what our early adopters have to say about Bagel Muse. Join the beta today.
           </p>
         </ScrollReveal>
       </div>
