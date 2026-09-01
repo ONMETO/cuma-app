@@ -3,6 +3,7 @@ import appleLogo from '../../assets/apple_logo.svg';
 import UiverseButton from './ui/UiverseButton';
 import ScrollReveal from './ui/ScrollReveal';
 import { BagelCanvas } from './ui/Bagel3D/BagelCanvas';
+import { APP_STORE_URL, openAppStore } from '../utils/appStore';
 
 export const Hero = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -29,15 +30,20 @@ export const Hero = () => {
         </ScrollReveal>
 
         <ScrollReveal direction="up" delay={0.3} className="flex flex-col sm:flex-row gap-6 pt-4 w-full sm:w-auto items-center">
-          <UiverseButton text="Download for iOS" />
+          <UiverseButton text="Download for iOS" onClick={openAppStore} />
 
-          <button className="bg-black/40 backdrop-blur-md border border-neutral-800 text-white px-6 py-3 rounded-xl flex items-center gap-3 hover:bg-neutral-900 transition-all group shadow-xl h-[60px]">
+          <a
+            href={APP_STORE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-black/40 backdrop-blur-md border border-neutral-800 text-white px-6 py-3 rounded-xl flex items-center gap-3 hover:bg-neutral-900 transition-all group shadow-xl h-[60px]"
+          >
             <img src={appleLogo} alt="Apple" className="w-6 h-6" />
             <div className="flex flex-col items-start leading-none">
               <span className="text-[10px] font-medium opacity-80 uppercase tracking-wider">Download on the</span>
               <span className="text-xl font-semibold -mt-0.5">App Store</span>
             </div>
-          </button>
+          </a>
         </ScrollReveal>
       </div>
     </div>

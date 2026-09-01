@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { motion, useInView } from "motion/react";
 import { ArrowUpRight } from "lucide-react";
 import appleLogo from "../../assets/apple_logo.svg";
+import { APP_STORE_URL } from "../utils/appStore";
 
 const inter = "'Inter', sans-serif";
 const serif = "'DM Serif Display', serif";
@@ -67,7 +68,9 @@ export function DownloadCTA() {
 
             <div className="flex flex-col sm:flex-row items-center gap-4">
               <a
-                href="#"
+                href={APP_STORE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group flex items-center gap-2.5 px-8 py-4 rounded-full bg-white text-[#08080c] hover:shadow-lg hover:shadow-white/10 transition-all"
                 style={{ fontFamily: inter, fontSize: 15, fontWeight: 500 }}
               >

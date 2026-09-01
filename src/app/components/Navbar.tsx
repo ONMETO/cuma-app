@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import logoImg from '../../assets/logo.png';
+import { openAppStore } from '../utils/appStore';
 
 interface NavbarProps {
   currentView: 'landing' | 'region-select' | 'doc-viewer';
@@ -38,20 +39,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentView, onNavigateHome }) =
   const handleGetAppClick = (e: React.MouseEvent) => {
     e.preventDefault();
     setIsMobileOpen(false);
-    if (currentView !== 'landing') {
-      onNavigateHome();
-      setTimeout(() => {
-        const element = document.getElementById('features');
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 150);
-    } else {
-      const element = document.getElementById('features');
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
+    openAppStore();
   };
 
   return (
