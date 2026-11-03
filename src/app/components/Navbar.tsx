@@ -4,7 +4,7 @@ import logoImg from '../../assets/logo.png';
 import { openAppStore } from '../utils/appStore';
 
 interface NavbarProps {
-  currentView: 'landing' | 'region-select' | 'doc-viewer';
+  currentView: 'landing' | 'region-select' | 'doc-viewer' | 'contact';
   onNavigateHome: () => void;
 }
 
@@ -69,6 +69,13 @@ export const Navbar: React.FC<NavbarProps> = ({ currentView, onNavigateHome }) =
           >
             About
           </a>
+          <a 
+            href="#faq" 
+            onClick={(e) => handleAnchorClick(e, '#faq')}
+            className="hover:text-white transition-colors"
+          >
+            FAQ
+          </a>
         </div>
 
         <div className="flex items-center gap-4">
@@ -105,6 +112,13 @@ export const Navbar: React.FC<NavbarProps> = ({ currentView, onNavigateHome }) =
             className="text-lg font-medium text-neutral-200 hover:text-white py-2 border-b border-neutral-900"
           >
             About
+          </a>
+          <a 
+            href="#faq" 
+            onClick={(e) => handleAnchorClick(e, '#faq')}
+            className="text-lg font-medium text-neutral-200 hover:text-white py-2 border-b border-neutral-900"
+          >
+            FAQ
           </a>
           <button 
             onClick={handleGetAppClick}

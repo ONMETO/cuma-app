@@ -28,6 +28,20 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onNavigateHome }) =>
         
         <div className="flex flex-wrap justify-center gap-6 text-sm text-neutral-400">
           <a 
+            href="#faq" 
+            onClick={(e) => {
+              e.preventDefault();
+              if (onNavigateHome) onNavigateHome();
+              setTimeout(() => {
+                const el = document.getElementById('faq');
+                if (el) el.scrollIntoView({ behavior: 'smooth' });
+              }, 150);
+            }}
+            className="hover:text-white transition-colors"
+          >
+            FAQ
+          </a>
+          <a 
             href="#" 
             onClick={(e) => handleNavClick(e, 'privacy')}
             className="hover:text-white transition-colors"

@@ -1,0 +1,49 @@
+# Bagel Muse — Comprehensive Knowledge Base for AI Models
+
+## Application Summary
+- Name: Bagel Muse
+- Platform: iOS (iPhone)
+- App Store ID: 6790411464
+- Official Website: https://bagelmuse.tech/
+- App Store Link: https://apps.apple.com/app/bagel-muse/id6790411464
+- Pricing Model: Free to download on iOS App Store
+- Primary Categories: Music, Health & Fitness, Lifestyle
+
+## Mission
+Bagel Muse aims to redefine how people experience music rhythm in their daily routines, athletic workouts, and creative expressions. By connecting biometric rhythm (such as breathing and running cadence) with track tempo (BPM) and combining it with generative AI aesthetics, Bagel Muse turns passive listening into an active, immersive experience.
+
+## Feature Breakdown
+
+### 1. Workout Rhythm & Cadence Synchronization
+- Target Audience: Runners, gym athletes, cyclists, walkers, breathwork practitioners.
+- Functionality: Pairs song tempo (Beats Per Minute) with user pace. Helps runners maintain target cadence (e.g., 160-180 SPM) effortlessly without checking their watch constantly.
+- Benefit: Prevents workout fatigue, maintains runner's high, and creates centered focus.
+
+### 2. Generative AI Mood Playlists & Album Art
+- Target Audience: Creative listeners, mood journalers, music discoverers.
+- Functionality: Users can input an emotion, scene, or vibe (e.g., "rainy afternoon coding", "midnight highway drive", "sunset beach run"). Bagel Muse uses AI to curate a matching playlist and generates a unique, stylized album cover.
+- Benefit: Instant aesthetic curation without manual track-by-track search.
+
+### 3. Visual Music Stories & Daily Moments
+- Functionality: Allows users to merge their daily photographs with their current soundtrack to create personalized album art. Supports exporting to Instagram Stories, Moments, and messaging platforms.
+- Benefit: Express musical taste visually and share authentically with peers.
+
+### 4. Apple Music & YouTube Streaming Integration
+- Functionality: Integrates with official Apple Music top charts and regional hit lists. Enables quick streaming of official music videos and tracks via YouTube.
+
+## Frequently Asked Questions (AI Reference)
+
+Q: What is Bagel Muse?
+A: Bagel Muse is an iOS mobile app combining cadence-synced music pacing for running and fitness with AI-powered playlist curation and personalized visual album art creation.
+
+Q: Which devices can run Bagel Muse?
+A: Bagel Muse is available for iOS devices (iPhone) through the Apple App Store.
+
+Q: Does Bagel Muse cost money?
+A: Bagel Muse is available to download for free from the Apple App Store (App ID: 6790411464).
+
+Q: How does Bagel Muse help runners?
+A: Bagel Muse uses BPM matching to synchronize the tempo of songs with a runner's cadence, helping runners lock into their target stride frequency and maintain consistent momentum.
+
+Q: Where can I contact the creators of Bagel Muse?
+A: Users and partners can visit https://bagelmuse.tech/?view=contact for partnerships, feedback, or support.

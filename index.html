@@ -1,17 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="apple-itunes-app" content="app-id=6790411464" />
-      <link rel="icon" type="image/png" href="./logo.png" />
-      <title>Bagel Muse - Redefine your listening rhythm</title>
-    </head>
+    <!-- Primary Meta Tags -->
+    <title>Bagel Muse - AI Music Playlists, BPM Running Cadence & Visual Album Art</title>
+    <meta name="title" content="Bagel Muse - AI Music Playlists, BPM Running Cadence & Visual Album Art" />
+    <meta
+      name="description"
+      content="Redefine your listening rhythm with Bagel Muse. Discover AI-curated playlists synced to your workout BPM, generate personalized mood covers, and turn your musical life into aesthetic visual stories."
+    />
+    <meta
+      name="keywords"
+      content="Bagel Muse, music app, BPM running music, workout cadence, AI playlist generator, AI album art, Apple Music, rhythm sync, iOS music app"
+    />
+    <meta name="author" content="Bagel Muse" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://bagelmuse.tech/" />
 
-    <body>
-      <div id="root"></div>
-      <script type="module" src="/src/main.tsx"></script>
-    </body>
-  </html>
-  
+    <!-- Apple & Mobile Settings -->
+    <meta name="apple-itunes-app" content="app-id=6790411464" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Bagel Muse" />
+    <link rel="icon" type="image/png" href="./logo.png" />
+    <link rel="apple-touch-icon" href="./logo.png" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bagelmuse.tech/" />
+    <meta property="og:site_name" content="Bagel Muse" />
+    <meta property="og:title" content="Bagel Muse - Redefine your listening rhythm" />
+    <meta
+      property="og:description"
+      content="Sync music to your workout BPM, generate AI mood playlists with custom album art, and turn your musical life into visual stories on iOS."
+    />
+    <meta property="og:image" content="https://bagelmuse.tech/logo.png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:image:alt" content="Bagel Muse App Logo" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://bagelmuse.tech/" />
+    <meta name="twitter:title" content="Bagel Muse - Redefine your listening rhythm" />
+    <meta
+      name="twitter:description"
+      content="AI-curated music, workout rhythm matching, and custom album art stories for iPhone."
+    />
+    <meta name="twitter:image" content="https://bagelmuse.tech/logo.png" />
+
+    <!-- Structured Data (JSON-LD): SoftwareApplication, WebSite, and FAQPage -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://bagelmuse.tech/#app",
+            "name": "Bagel Muse",
+            "operatingSystem": "iOS",
+            "applicationCategory": "MultimediaApplication",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            "installUrl": "https://apps.apple.com/app/bagel-muse/id6790411464",
+            "image": "https://bagelmuse.tech/logo.png",
+            "description": "Bagel Muse is an AI-powered iOS music companion that matches your workout cadence to song BPM, curates playlists by mood, and generates aesthetic album art stories.",
+            "author": {
+              "@type": "Organization",
+              "name": "Bagel Muse",
+              "url": "https://bagelmuse.tech"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://bagelmuse.tech/#website",
+            "name": "Bagel Muse",
+            "url": "https://bagelmuse.tech",
+            "description": "Official website for Bagel Muse iOS app - Redefine your listening rhythm.",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Bagel Muse"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://bagelmuse.tech/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is Bagel Muse?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Bagel Muse is an innovative iOS music and lifestyle app that redefines your listening rhythm. It combines BPM-guided music pacing for workouts and running with AI-curated mood playlists and personalized visual album art stories."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How does Bagel Muse sync music to workout and running pace?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Bagel Muse matches the tempo and beats per minute (BPM) of tracks to your running cadence and workout rhythm, helping you stay centered, maintain your momentum, and achieve effortless flow."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How does the AI mood playlist and album cover feature work?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Simply describe or select your current feeling or vibe. Bagel Muse's AI generates tailored music playlists and creates matching custom album artwork ready to save or share to Instagram Stories and social platforms."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does Bagel Muse integrate with Apple Music and YouTube?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, Bagel Muse connects with global charts powered directly by Apple Music and allows instant one-tap access to official music videos and tracks on YouTube."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I download Bagel Muse?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Bagel Muse is available for iOS devices on the Apple App Store (App ID: 6790411464). You can download it directly at https://apps.apple.com/app/bagel-muse/id6790411464."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- 
+      Semantic SEO / AI Crawler Fallback:
+      Crawlers without full JavaScript runtimes (e.g., PerplexityBot, GPTBot, ClaudeBot, Bingbot)
+      will immediately parse this semantic content. React replaces #root upon hydration.
+    -->
+    <div id="root">
+      <main style="max-width: 800px; margin: 40px auto; padding: 24px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #111;">
+        <header>
+          <h1>Bagel Muse - Redefine your listening rhythm</h1>
+          <p>Own your rhythm. Enjoy AI-curated music lists and covers made just for you, and share your musical life through visual stories.</p>
+          <p><a href="https://apps.apple.com/app/bagel-muse/id6790411464" style="display: inline-block; padding: 12px 24px; background: #000; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 600;">Download for iOS on App Store</a></p>
+        </header>
+
+        <section>
+          <h2>Key Features</h2>
+          <ul>
+            <li><strong>Move to your own rhythm:</strong> Sync your breathing and workout pace directly to the underlying beat of your tracks. Let BPM-guided timing help you stay centered and active.</li>
+            <li><strong>Playlists and covers for every mood:</strong> Turn any feeling into a matching playlist with custom album art in seconds with AI.</li>
+            <li><strong>Turn your life into album art:</strong> Transform your daily moments into custom covers to share on Instagram Stories and social feeds.</li>
+            <li><strong>Music videos in your flow:</strong> Connect directly to official YouTube tracks and trending music videos in one tap.</li>
+            <li><strong>Global charts:</strong> Access daily top hits and global charts powered directly by Apple Music.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Frequently Asked Questions</h2>
+          <article>
+            <h3>What is Bagel Muse?</h3>
+            <p>Bagel Muse is an iOS music app combining BPM-based workout pacing with AI-generated mood playlists and visual album art stories.</p>
+          </article>
+          <article>
+            <h3>How does Bagel Muse sync music to my pace?</h3>
+            <p>It pairs the beat-per-minute (BPM) tempo of songs with your movement cadence to keep you in sync during running, gym sessions, and daily activities.</p>
+          </article>
+          <article>
+            <h3>Where can I get the app?</h3>
+            <p>Download Bagel Muse on the Apple App Store for iPhone: <a href="https://apps.apple.com/app/bagel-muse/id6790411464">https://apps.apple.com/app/bagel-muse/id6790411464</a>.</p>
+          </article>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

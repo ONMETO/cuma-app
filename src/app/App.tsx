@@ -3,6 +3,7 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { BentoFeatures } from './components/BentoFeatures';
 import { Testimonials } from './components/Testimonials';
+import { FAQ } from './components/FAQ';
 import { Footer } from './components/Footer';
 import { DocPage } from './components/DocPage';
 import { ContactPage } from './components/ContactPage';
@@ -122,6 +123,7 @@ export default function App() {
               <Hero />
               <BentoFeatures />
               <Testimonials />
+              <FAQ />
             </>
           ) : view === 'contact' ? (
             <ContactPage onNavigateHome={handleNavigateHome} />
